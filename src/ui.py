@@ -31,4 +31,4 @@ class UserInterface:
         odb = SqliteDatabase(e.files[0].path)
         introspector = Introspector.from_database(odb)
         models = introspector.generate_models()
-        print(models)
+        print(models.keys())

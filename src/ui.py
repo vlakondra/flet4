@@ -1,4 +1,5 @@
 import flet as ft
+
 from peewee import *
 from playhouse.reflection import Introspector
 

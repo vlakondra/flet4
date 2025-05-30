@@ -27,7 +27,7 @@ class SQLiteDB:
 
     def get_table(self,table_name):
         '''Возвращает DF выбранной таблицы'''
-        query = f"SELECT * FROM {table_name}"
+        query = f"SELECT * FROM {table_name} LIMIT 500"
         df = pd.read_sql_query(query, self.conn)
         return df
  

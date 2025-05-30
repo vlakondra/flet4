@@ -51,6 +51,9 @@ class SQLiteDB:
 
 
 ###########-ИСПОЛЬЗОВАНИЕ-################
+#SQLite Файлы:
+# https://www.timestored.com/data/sample/sqlite
+
 # Использование с контекстным менеджером
 # with SQLiteDatabase('путь_к_файлу') as db:
 #     tables = db.get_tables()

@@ -57,9 +57,9 @@ def create_row(df, row):
             ),
             # bgcolor=bg_color,
             # padding=ft.padding.symmetric(vertical=5),
-            border=ft.border.only(
-                bottom=ft.border.BorderSide(1, ft.Colors.GREY_300)
-            )
+            # border=ft.border.only(
+            #     bottom=ft.border.BorderSide(1, ft.Colors.GREY_300)
+            # )
         )
 
 
@@ -70,6 +70,7 @@ def onDrawerClick(e, tbl):
     # получим DF выбранной таблицы
     tdf = sqlite.get_table(tname)
     sqlite.close()
+
 
     # Создаем заголовок таблицы
     header = ft.Container(
@@ -127,6 +128,7 @@ def onDrawerClick(e, tbl):
             spacing=1
         )
     )
+
     #Закроем drawer
     drw = e.page.drawer
     if drw:

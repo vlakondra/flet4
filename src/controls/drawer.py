@@ -14,4 +14,6 @@ class Drawer(ft.NavigationDrawer):
                 )
                 for tbl in data
             ],
+
         )
+        
